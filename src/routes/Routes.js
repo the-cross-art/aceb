@@ -20,7 +20,7 @@ import {
 const CommonRoutes = () => {
   return (
     <Switch>
-      <Route exact path="" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/gmb-geogrid" component={GmbGeoGrid} />
       <Route exact path="/department" component={Department} />
