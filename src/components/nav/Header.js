@@ -29,13 +29,13 @@ const Header = () => {
       type: "LOGOUT",
       payload: null,
     });
-    history.push("/aceb/login");
+    history.push("/login");
   };
 
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
-        <LinkContainer to="/aceb">
+        <LinkContainer to="">
           <Navbar.Brand>
             <Image src={logo} style={{ width: "70px" }} className="img-fluid" />
           </Navbar.Brand>
@@ -43,7 +43,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav w-100 justify-content-end">
           <Nav className="ml-auto">
-            <LinkContainer to="/aceb/about">
+            <LinkContainer to="/about">
               <Nav.Link>About</Nav.Link>
             </LinkContainer>
             <NavDropdown
@@ -54,12 +54,12 @@ const Header = () => {
               onMouseLeave={hideDropdown}
             >
               <NavDropdown.Item>
-                <LinkContainer to="/aceb/department">
+                <LinkContainer to="/department">
                   <Nav.Link>Department details</Nav.Link>
                 </LinkContainer>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <LinkContainer to="/aceb/team">
+                <LinkContainer to="/team">
                   <Nav.Link>Team details</Nav.Link>
                 </LinkContainer>
               </NavDropdown.Item>
@@ -69,21 +69,21 @@ const Header = () => {
                 </LinkContainer>
               </NavDropdown.Item> */}
               <NavDropdown.Item>
-                <LinkContainer to="/aceb/blogs">
+                <LinkContainer to="/blogs">
                   <Nav.Link>Blogs</Nav.Link>
                 </LinkContainer>
               </NavDropdown.Item>
             </NavDropdown>
-            <LinkContainer to="/aceb/constitution">
+            <LinkContainer to="/constitution">
               <Nav.Link>Constitution</Nav.Link>
             </LinkContainer>
             {!user && (
-              <LinkContainer to="/aceb/login">
+              <LinkContainer to="/login">
                 <Nav.Link>Login</Nav.Link>
               </LinkContainer>
             )}
             {!user && (
-              <LinkContainer className="sign-up-nav" to="/aceb/">
+              <LinkContainer className="sign-up-nav" to="/">
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
             )}
@@ -95,11 +95,11 @@ const Header = () => {
               >
                 {user.role === "subscriber" ? (
                   <NavDropdown.Item key="subscriber">
-                    <Link to="/aceb/user/history">Dashboard</Link>
+                    <Link to="/user/history">Dashboard</Link>
                   </NavDropdown.Item>
                 ) : (
                   <NavDropdown.Item key="admin">
-                    <Link to="/aceb/admin/dashboard">Admin Dashboard</Link>
+                    <Link to="/admin/dashboard">Admin Dashboard</Link>
                   </NavDropdown.Item>
                 )}
                 <NavDropdown.Item onClick={handleLogout}>
