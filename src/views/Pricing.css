@@ -1,0 +1,65 @@
+.background-gradient {
+  position: relative;
+}
+.background-gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(150deg, #2d1582, #19a0ff);
+  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+}
+.ant-tabs-nav::before {
+  display: none;
+}
+.ant-tabs-nav-list {
+  border: 2px solid #fff;
+}
+.ant-tabs-nav {
+  margin: 0 0 25px 0 !important;
+}
+.ant-tabs-tab + .ant-tabs-tab {
+  margin: 0;
+}
+.ant-tabs-ink-bar {
+  display: none;
+}
+.ant-tabs-tab {
+  padding: 12px 40px;
+  color: #fff;
+  font-weight: 600;
+}
+.ant-tabs-tab.ant-tabs-tab-active {
+  background-color: #fff !important;
+}
+.ant-tabs-tab .ant-tabs-tab-btn {
+  color: #000 !important;
+  font-size: 16px;
+}
+.pricing-cards {
+  margin: 10px 15px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.pricing-cards:hover {
+  transform: translateY(-5px);
+  transition: 0.4s ease;
+}
+.pricing-cards svg {
+  margin-right: 8px;
+}
+.pricing-cards .card-title {
+  font-size: 24px;
+}
+.pricing-cards .pricing {
+  font-size: 45px;
+  font-weight: 600;
+}
+.management-features .icon {
+  font-size: 45px;
+  color: #007bff;
+}
+.management-features .details p {
+  font-size: 17px;
+}

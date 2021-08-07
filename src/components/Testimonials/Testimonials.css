@@ -1,0 +1,14 @@
+.testimonials .bottom-testimonial .icon img {
+  margin-right: 20px;
+  width: 50px;
+}
+.testimonials .card-text {
+  padding: 10px 0;
+}
+.testimonials .bottom-testimonial .user-details h6 {
+  margin-bottom: 5px;
+}
+.testimonials .bottom-testimonial .user-details p {
+  font-size: 12px;
+  margin: 0;
+}
