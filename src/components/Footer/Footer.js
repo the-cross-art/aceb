@@ -20,7 +20,7 @@ const Footer = () => {
             <Image src={logo} style={{ width: "40px" }} />
             <p className="font-italic">
               The Association of Civil Engineers, B.I.T. Sindri established in
-              2021 is an assortment of individuals who aim to acquaint you with
+              2017 is an assortment of individuals who aim to acquaint you with
               the latest trends in the Civil Engineering field.
             </p>
             <ul className="d-flex mt-4 social-links">

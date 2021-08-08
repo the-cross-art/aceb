@@ -55,7 +55,7 @@ const About = () => {
               <p>
                 The Association of Civil Engineers, B.I.T. Sindri is a step
                 forward in that direction. The Association of Civil Engineers,
-                B.I.T. Sindri established in 2021 is an assortment of
+                B.I.T. Sindri established in 2017 is an assortment of
                 individuals who aim to acquaint you with the latest trends in
                 the Civil Engineering field. It is an initiative taken by keen
                 Civil Engineering students of B.I.T. Sindri to broaden their
