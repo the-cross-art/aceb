@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import PostImg from "../../assets/images/posting.svg";
-import TrackImg from "../../assets/images/track.svg";
-import ManageImg from "../../assets/images/management.svg";
+import PostImg from "../../assets/images/structure.svg";
+import TrackImg from "../../assets/images/building.svg";
+import ManageImg from "../../assets/images/enviornment.svg";
+import CromImg from "../../assets/images/earth.svg";
 
 const Info = () => {
   return (
@@ -15,10 +16,11 @@ const Info = () => {
                 <span>01</span>
               </div>
               <div className="text">
-                <h4>GMB Post Scheduling</h4>
+                <h4>Structural Engineering</h4>
                 <p>
-                  One dashboard lets you create posts for every property in your
-                  GMB network.
+                  Structural engineering is the field of engineering that deals
+                  with the structural integrity and strength of a building or
+                  structure.
                 </p>
               </div>
             </div>
@@ -27,6 +29,7 @@ const Info = () => {
             <Image src={PostImg} className="img-fluid" />
           </Col>
         </Row>
+        <br />
         <Row className="align-items-center">
           <Col md={6} sm={12}>
             <Image src={TrackImg} className="img-fluid" />
@@ -37,15 +40,17 @@ const Info = () => {
                 <span>02</span>
               </div>
               <div className="text">
-                <h4>Track Local Rankings.</h4>
+                <h4>Geotechnical Engineering</h4>
                 <p>
-                  Ensure your Google My Business listing performs well in local
-                  search results.
+                  Geotechnical engineering, also known as geotechnics, is the
+                  branch of civil engineering concerned with the engineering
+                  behavior of earth materials.
                 </p>
               </div>
             </div>
           </Col>
         </Row>
+        <br />
         <Row className="align-items-center">
           <Col md={6} sm={12}>
             <div className="text-info-section">
@@ -53,16 +58,43 @@ const Info = () => {
                 <span>03</span>
               </div>
               <div className="text">
-                <h4>GMB Management</h4>
+                <h4>Environmental & Water Resources</h4>
                 <p>
-                  All of your property's GMB information can be edited and
-                  synced in a place.
+                  Environmental engineering is a job type that is a professional
+                  engineering discipline and takes from broad scientific topics
+                  like chemistry, biology, ecology, geology, hydraulics,
+                  hydrology, microbiology, and mathematics to create solutions
+                  that will protect and also improve the health of living
+                  organisms and improve the quality of the environment.
                 </p>
               </div>
             </div>
           </Col>
           <Col md={6} sm={12}>
             <Image src={ManageImg} className="img-fluid" />
+          </Col>
+        </Row>
+        <br />
+        <Row className="align-items-center">
+          <Col md={6} sm={12}>
+            <Image src={CromImg} className="img-fluid" />
+          </Col>
+          <Col md={6} sm={12}>
+            <div className="text-info-section">
+              <div className="number mb-4">
+                <span>04</span>
+              </div>
+              <div className="text">
+                <h4>Geomatics & Geology</h4>
+                <p>
+                  Engineering geology is the application of geology to
+                  engineering study for the purpose of assuring that the
+                  geological factors regarding the location, design,
+                  construction, operation and maintenance of engineering works
+                  are recognized and accounted for.
+                </p>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>

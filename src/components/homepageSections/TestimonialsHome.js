@@ -12,7 +12,7 @@ const TestimonialsHome = () => {
       <div className="section_padding testimonial-section">
         <Container>
           <Row>
-            <Col md={4}>
+            <Col md={6}>
               <Testimonials
                 rating={5}
                 review_text={
@@ -23,7 +23,7 @@ const TestimonialsHome = () => {
                 post={"Director BIT Sindri"}
               />
             </Col>
-            <Col md={4}>
+            <Col md={6}>
               <Testimonials
                 rating={5}
                 review_text={
@@ -34,7 +34,7 @@ const TestimonialsHome = () => {
                 post={"CEO, XYZ Company"}
               />
             </Col>
-            <Col md={4}>
+            {/* <Col md={4}>
               <Testimonials
                 rating={5}
                 review_text={
@@ -44,7 +44,7 @@ const TestimonialsHome = () => {
                 name={"John Antonio"}
                 post={"CEO, XYZ Company"}
               />
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </div>

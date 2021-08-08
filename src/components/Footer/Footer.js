@@ -9,7 +9,7 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 
 const Footer = () => {
   return (
@@ -112,7 +112,6 @@ const Footer = () => {
           <a
             style={{
               color: "#1890ff",
-              textShadow: "6px 6px 0px rgba(0,0,0,0.2)",
             }}
             href="https://www.linkedin.com/in/imran-nazir-692abb112/"
           >

@@ -7,10 +7,9 @@ const PricingBar = () => {
     <div className="pricing-bar section_padding text-center">
       <Container>
         <span className="text-white">
-          <span className="font-weight-bold">Enterprise</span> Google My
-          Business location management.
+          <span className="font-weight-bold">OUR</span> PATRONAGE
         </span>
-        <Link className="pricing-btn ml-3">See Pricing</Link>
+        {/* <Link className="pricing-btn ml-3">See Pricing</Link> */}
       </Container>
     </div>
   );
