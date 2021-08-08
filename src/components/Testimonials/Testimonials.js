@@ -6,7 +6,7 @@ import "./Testimonials.css";
 const Testimonials = (props) => {
   return (
     <div className="testimonials">
-      <Card>
+      <Card style={{ height: "330px" }}>
         <Card.Body>
           <StarRatingComponent
             name="rate1"

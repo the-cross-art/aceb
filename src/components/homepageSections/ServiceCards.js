@@ -33,7 +33,7 @@ const ServiceCards = () => {
                   </div>
                   <hr className="my-3" />
                   <div className="card-link">
-                    <Link to="/aceb/blogs/hyperloops">Explore More</Link>
+                    <Link to="/blogs/hyperloops">Explore More</Link>
                   </div>
                 </Card.Body>
               </Card>
@@ -55,7 +55,7 @@ const ServiceCards = () => {
                   </div>
                   <hr className="my-3" />
                   <div className="card-link">
-                    <Link to="/aceb/blogs/hyperloops">Explore More</Link>
+                    <Link to="/blogs/hyperloops">Explore More</Link>
                   </div>
                 </Card.Body>
               </Card>
@@ -78,7 +78,7 @@ const ServiceCards = () => {
                   </div>
                   <hr className="my-3" />
                   <div className="card-link">
-                    <Link to="/aceb/blogs/hyperloops">Explore More</Link>
+                    <Link to="/blogs/hyperloops">Explore More</Link>
                   </div>
                 </Card.Body>
               </Card>
@@ -101,7 +101,7 @@ const ServiceCards = () => {
                   </div>
                   <hr className="my-3" />
                   <div className="card-link">
-                    <Link to="/aceb/blogs/hyperloops">Explore More</Link>
+                    <Link to="/blogs/hyperloops">Explore More</Link>
                   </div>
                 </Card.Body>
               </Card>

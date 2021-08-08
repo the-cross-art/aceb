@@ -18,7 +18,7 @@ const Constitution = () => {
               </h1>
               <p className="banner-text">ASSOCIATION OF CIVIL ENGINEERS</p>
               <p>B.I.T Sindri</p>
-              <p>ESTD. 2021</p>
+              <p>ESTD. 2017</p>
               <div className="mt-4">
                 <Button
                   href="https://drive.google.com/file/d/13GrwttLjVEwl3Syfn-0tLmq_WdcHbWqQ/view?usp=sharing"
