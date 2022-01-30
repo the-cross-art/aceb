@@ -15,6 +15,7 @@ import {
   Constitution,
   Blogs,
   HyperLoop,
+  Magazine,
 } from "../views";
 
 const CommonRoutes = () => {
@@ -28,6 +29,7 @@ const CommonRoutes = () => {
       <Route exact path="/pricing" component={Pricing} />
       <Route exact path="/blogs" component={Blogs} />
       <Route exact path="/constitution" component={Constitution} />
+      <Route exact path="/magazine" component={Magazine} />
       <Route exact path="/posting" component={Posting} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/register" component={Register} />

@@ -76,6 +76,8 @@ const Header = () => {
             </NavDropdown>
             <LinkContainer to="/constitution">
               <Nav.Link>Constitution</Nav.Link>
+            </LinkContainer><LinkContainer to="/magazine">
+              <Nav.Link>Magazine</Nav.Link>
             </LinkContainer>
             {!user && (
               <LinkContainer to="/login">

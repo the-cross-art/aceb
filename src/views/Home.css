@@ -25,11 +25,11 @@
   border-color: #fff;
 }
 .nav-tabs .nav-link.active {
-  border-bottom-color: #0d6efd;
-  color: #0d6efd;
+  border-bottom-color: #1b51a0;
+  color: #1b51a0;
 }
 .nav.nav-tabs a svg {
-  color: #0d6efd;
+  color: #1b51a0;
   font-size: 30px;
 }
 
@@ -40,11 +40,11 @@
   width: 30px;
   height: 30px;
   background-color: rgba(55, 125, 255, 0.1);
-  color: #0d6efd;
+  color: #1b51a0;
   border-radius: 50%;
 }
 .text-info-section h4 {
-  color: #0d6efd;
+  color: #1b51a0;
 }
 .text-info-section p {
   color: #77838f;
@@ -56,11 +56,11 @@
   border: 0;
 }
 .pricing-bar {
-  background: #0d6efd;
+  background: #1b51a0;
 }
 .pricing-btn {
   text-decoration: none !important;
-  color: #0d6efd;
+  color: #1b51a0;
   background: #fff;
   border-radius: 5px;
   padding: 15px;
