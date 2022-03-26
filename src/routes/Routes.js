@@ -16,6 +16,7 @@ import {
   Blogs,
   HyperLoop,
   Magazine,
+  Gate
 } from "../views";
 
 const CommonRoutes = () => {
@@ -31,11 +32,14 @@ const CommonRoutes = () => {
       <Route exact path="/constitution" component={Constitution} />
       <Route exact path="/magazine" component={Magazine} />
       <Route exact path="/posting" component={Posting} />
+      <Route exact path="/gate" component={Gate} />
+
       <Route exact path="/login" component={Login} />
       <Route exact path="/register" component={Register} />
       <Route exact path="/register/complete" component={RegisterComplete} />
       <Route exact path="/forgot/password" component={ForgotPassword} />
       <Route exact path="/blogs/hyperloops" component={HyperLoop} />
+      
     </Switch>
   );
 };
