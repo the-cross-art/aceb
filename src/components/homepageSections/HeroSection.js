@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <div className="hero-banner section_padding">
       <Container>
-        <Row className="align-items-center justify-content-between">
+        {/* <Row className="align-items-center justify-content-between"> */}
           {/* <Col md={12} sm={12}> */}
             {/* <Image src={AceImg} className="img-fluid" /> */}
             {/* <video src={AceVideo} width="750" height="500" controls>
@@ -19,7 +19,7 @@ const HeroSection = () => {
           </Col> */}
           
           
-          <Col md={6} sm={12}>
+          {/* <Col md={6} sm={12}>
             <Image src={QualifyImg} className="img-fluid" />
           </Col>
           <Col md={5} sm={12}>
@@ -33,7 +33,7 @@ const HeroSection = () => {
               </LinkContainer>
             </div>
           </Col>
-        </Row>
+        </Row> */}
         <br />
         <Row className="align-items-center justify-content-between">
           {/* <Col md={12} sm={12}> */}
