@@ -1,0 +1,216 @@
+/* *{
+  margin-top: -5px;
+} */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: -107px;
+  /* Adjust the height as needed */
+
+}
+
+.video-class {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity as needed */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .container {
+    max-width: 800px;
+    padding: 0 20px;
+    color: white;
+    padding: 0 0 0.25em 0;
+    margin: 0 0 0.25em 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+} */
+
+.price {
+  /* font-family: @monser; */
+  display: block;
+  font-size: 1.3em;
+  float: right;
+}
+
+.banner-head {
+  /* color: #CBEAFF; */
+  color: white;
+  font-family: "Poppins", Sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 1.5px;
+
+}
+
+.banner-subhead {
+  /* font-size: 2rem;
+    margin-bottom: 20px; */
+  /* color: #CBEAFF; */
+  color: #FFC229;
+  font-family: "Poppins", Sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 1.5px;
+
+}
+
+.button-73 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+.PB_container {
+  margin: 30px;
+}
+
+/* Widget Container */
+#flamelab-convo-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  z-index: 9999;
+  background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 19px );
+-webkit-backdrop-filter: blur( 19px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+}
+
+/* Avatar Image */
+#flamelab-convo-widget img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Message Box */
+.flamelab-cw-msg-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message Text */
+.flamelab-cw-msg-box span {
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Button Container */
+.flamelab-cw-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+/* Button Styles */
+.flamelab-cw-button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.flamelab-cw-button-yes {
+  background-color: #00aaff;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.flamelab-cw-button-no {
+  background-color: #eaeaea;
+  color: #333333;
+}
+
+
+#flamelab-convo-widget img {
+  animation-name: flamelab-convo-widget_rotate;
+  animation-duration: 1.5s;
+  transform: rotate(20deg);
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.flamelab-cw-msg-box {
+  background: white;
+  width: 280px;
+  padding: 20px;
+  animation-name: flamelab-convo-widget_msg-appear;
+  animation-duration: 2s;
+  font-size: 15px;
+  line-height: 23px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

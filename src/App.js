@@ -1,4 +1,5 @@
 import React, { useEffect, Suspense } from "react";
+import './App.css'
 import { lazily } from "react-lazily";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -7,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { currentUser } from "./api/auth";
 import { AdminRoutes, CommonRoutes, UserRoutes } from "./routes";
 import { LoadingOutlined } from "@ant-design/icons";
+import Navbar from "./components/nav/Navbar"
 
 const { Header, Footer } = lazily(() => import("./components"));
 
@@ -49,7 +51,8 @@ const App = () => {
         </div>
       }
     >
-      <Header />
+      {/* <Header /> */}
+      <Navbar/>
       <ToastContainer />
       <CommonRoutes />
       <AdminRoutes />

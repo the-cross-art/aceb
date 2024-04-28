@@ -1,3 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+
+
+
 h1,
 h2,
 h3,
@@ -96,3 +108,5 @@ footer .social-links li a {
 .get-started-bar {
   font-size: 20px;
 }
+
+
