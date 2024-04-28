@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import BannerImg from "../assets/images/constitution.svg";
 import MainImg from "../assets/images/magazine.jpg";
 
-import "./GmbGeoGrid.css";
+// import "./GmbGeoGrid.css";
 
 const Constitution = () => {
   return (
@@ -21,7 +21,7 @@ const Constitution = () => {
               <p>ESTD. 2017</p>
               <div className="mt-4">
                 <Button
-                  href="https://drive.google.com/file/d/1o4lz6FuyfUOSsYVlnmVygRVe9i83pzbM/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1bgOfvMIDeKTimA-zNEP371_PWnLDSEMO/view?usp=drive_link"
                   className="btn-animation"
                 >
                   Download

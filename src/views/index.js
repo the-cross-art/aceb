@@ -7,10 +7,10 @@ export { default as ForgotPassword } from "./auth/ForgotPassword";
 // common views
 export { default as Home } from "./Home";
 export { default as About } from "./About";
-export { default as GmbGeoGrid } from "./GmbGeoGrid";
+// export { default as GmbGeoGrid } from "./GmbGeoGrid";
 export { default as Department } from "./Department";
 export { default as Posting } from "./Posting";
-export { default as Pricing } from "./Pricing";
+// export { default as Pricing } from "./Pricing";
 export { default as Constitution } from "./Constitution";
 export { default as Magazine } from "./Magazine";
 export { default as Gate } from "./Gate";

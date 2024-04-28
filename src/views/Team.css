@@ -1,0 +1,93 @@
+.card{
+    width: 20rem;
+    height: 26rem
+  
+  }
+  .card-img{
+    width: 20rem;
+    max-height: 16rem;
+  }
+  .card-title{
+    font-size: calc(1rem + .3vw)
+  }
+  .card-text{
+    font-size: calc(1rem+ .3vw)
+  }
+  .card-body button{
+    font-size: calc(1rem + .3vw) !important;
+      padding: 4%;
+      margin-top: 2%;
+  }
+  .card-body svg{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .faculty_container{
+    padding-left: 8rem;
+  }
+  
+  /* card section responsive */
+  @media (max-width : 320px) {
+
+      
+    .card{
+      width: 20rem;
+      height: 14rem;
+  
+    }
+    .faculty_container{
+      padding-left: 3rem;
+    }
+    .card-img{
+      max-height: 10rem;
+    }
+    .card-title{
+      font-size: 0.9rem;
+    }
+    .card-text{
+      font-size: 0.9rem;
+  
+    }
+    .card-body button{
+    font-size: calc(1rem + .3vw) !important;
+  }
+  .card-body svg{
+    width: 15px;
+    height: 15px;
+    margin-top: 8px;
+  }
+  
+    
+  }
+  @media (max-width : 425px) {
+    .card{
+      width: 20rem;
+      height: 20rem;
+  
+    }
+    .faculty_container{
+      padding-left: 3rem;
+    }
+    .card-img{
+      max-height: 12rem;
+    }
+    .card-title{
+      font-size: 0.9rem;
+    }
+    .card-text{
+      font-size: 0.9rem;
+  
+    }
+    .card-body button{
+    font-size: calc(1rem + .3vw) !important;
+  }
+  .card-body svg{
+    width: 15px;
+    height: 15px;
+    margin-top: 8px;
+  }
+  
+    
+  }
+  
