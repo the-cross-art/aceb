@@ -6,7 +6,7 @@ import MainImg from "../assets/images/magazine.jpg";
 import GateImg from "../assets/images/GateAIR.jpeg";
 
 
-import "./GmbGeoGrid.css";
+// import "./GmbGeoGrid.css";
 
 const Gate = () => {
   return (

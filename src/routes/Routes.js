@@ -4,30 +4,45 @@ import {
   ForgotPassword,
   Home,
   About,
-  GmbGeoGrid,
   Login,
   Register,
   RegisterComplete,
   Posting,
-  Pricing,
   Department,
-  Team,
+
   Constitution,
   Blogs,
   HyperLoop,
   Magazine,
-  Gate
-} from "../views";
+  Gate,
 
+} from "../views";
+import Gallery from "../components/homepageSections/Gallery";
+import Coordinators from "../views/Coordinators";
+import Team2k21 from "../views/Team2k21";
+import Faculty from "../views/Faculty";
+import Lab from "../views/Lab";
+import ContactForm from "../components/contact/ContactUs";
+import Event from "../views/EventPage"
 const CommonRoutes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
-      <Route exact path="/gmb-geogrid" component={GmbGeoGrid} />
+      <Route exact path="/gallery" component={Gallery} />
+      <Route exact path="/coordinators" component={Coordinators} />
+      <Route exact path="/team2k21" component={Team2k21} />
+      <Route exact path="/faculty" component={Faculty} />
+      <Route exact path="/lab" component={Lab} />
+      <Route exact path="/events" component={Event} />
+      
+
+
+
+      {/* <Route exact path="/gmb-geogrid" component={GmbGeoGrid} /> */}
       <Route exact path="/department" component={Department} />
-      <Route exact path="/team" component={Team} />
-      <Route exact path="/pricing" component={Pricing} />
+      {/* <Route exact path="/team" component={Team} /> */}
+      {/* <Route exact path="/pricing" component={Pricing} /> */}
       <Route exact path="/blogs" component={Blogs} />
       <Route exact path="/constitution" component={Constitution} />
       <Route exact path="/magazine" component={Magazine} />
@@ -38,8 +53,8 @@ const CommonRoutes = () => {
       <Route exact path="/register" component={Register} />
       <Route exact path="/register/complete" component={RegisterComplete} />
       <Route exact path="/forgot/password" component={ForgotPassword} />
-      <Route exact path="/blogs/hyperloops" component={HyperLoop} />
-      
+      <Route exact path="/blogs/hyperloops" component={HyperLoop} />;
+      <Route exact path="/contactus" component={ContactForm} />;
     </Switch>
   );
 };

@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import BannerImg from "../assets/images/constitution.svg";
 import MainImg from "../assets/images/0001.jpg";
 
-import "./GmbGeoGrid.css";
+// import "./GmbGeoGrid.css";
 
 const Constitution = () => {
   return (

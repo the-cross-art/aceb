@@ -1,0 +1,74 @@
+/* *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: #f2f2f2;
+  min-height: 100%;
+  min-width: 100%;
+} */
+
+.S_container {
+  width: 90%;
+  margin: auto;
+}
+
+.S_cards-S_container {
+  display: flex;
+  border-radius: 6px;
+  color: #333;
+  /* background: #eee; */
+  padding: 1rem;
+  /* box-shadow: 0 0 1rem #000 inset; */
+  overflow-x: auto;
+  position: relative;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.S_card {
+  flex: 1 0 250px;
+  box-shadow: 0 1px 1rem -4px #000;
+  background: #fff;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  width: 30vw;
+  
+  img {
+    width: max-content;
+    height: 250px;
+    object-fit: center;
+  }
+  
+  &:hover {
+    box-shadow: 0 4px 1rem -4px #000;
+    transform: translateY(-3px);
+  }
+}
+
+.S_card-content {
+  padding: 1rem;
+}
+.S_head{
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 625px) {
+  .S_container {
+    width: 100%
+  }
+  
+  .S_cards-S_container {
+    padding: .5rem;
+  }
+  
+  .S_card {
+    margin: .5rem;
+  }
+}

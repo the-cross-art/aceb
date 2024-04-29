@@ -1,21 +1,25 @@
 import React from "react";
 import HeroSection from "../components/homepageSections/HeroSection";
-import Info from "../components/homepageSections/Info";
-import ServiceCards from "../components/homepageSections/ServiceCards";
 import TabSection from "../components/homepageSections/TabSection";
-import PricingBar from "../components/homepageSections/PricingBar";
-import TestimonialsHome from "../components/homepageSections/TestimonialsHome";
-
+import Avlokan from "../components/homepageSections/Avlokan";
+import HeroSectionTwo from "../components/homepageSections/HeroSectionTwo";
+import Patron from "../components/homepageSections/patrn";
+import PostBearer from "../components/homepageSections/PostBearer";
+import WalletModal from "../components/homepageSections/Overlay";
+import Slider from "../components/homepageSections/slider/Slider"
 import "./Home.css";
 
 const Home = () => {
   return (
     <div id="home" className="home">
       <HeroSection />
+      <WalletModal />
       <TabSection />
-      <Info />
-      <PricingBar />
-      <TestimonialsHome />
+      <Slider />
+      {/* <Avlokan /> */}
+      <HeroSectionTwo />
+      <Patron />
+      <PostBearer />
     </div>
   );
 };

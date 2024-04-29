@@ -1,0 +1,345 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear-fix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.img-responsive {
+  // max-width: 100%;
+  // height: auto;
+  // 300 × 450 px
+  width: 300px;
+  height: 450px
+}
+
+@import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
+
+$color-box-1 : #0f9bc0;
+$color-box-2 : rgba(34, 65, 154, .8);
+$color-box-3 : #57ccfd;
+$color-box-4 : #e660e3;
+$color-box-5 : #f07306;
+$color-box-6 : #9b1308;
+$color-box-7 : #de8b3e;
+
+.card__collection {
+  position: relative;
+  display: block;
+  background: rgba(10, 10, 10, .5);
+  padding: 10px;
+  font-family: 'Do Hyeon', sans-serif;
+  overflow: hidden;
+
+  .cards {
+    width: 300px;
+    height: 400px;
+    display: block;
+    margin-left: -8px !important;
+    background-size: cover;
+    float: left;
+    border-radius: 15px;
+    position: relative;
+    // overflow: hidden;
+    background-position: center;
+    margin: 10px;
+
+
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+      width: 400px;
+    }
+    
+    // @media screen and (min-width: 370px) {
+    //   width: 203px;
+    //   height: 450px;
+    // }
+
+  }
+
+
+  .cards--three {
+    position: relative;
+    z-index: 10;
+
+    .cards--three__rect-1 {
+      left: 10%;
+
+      .shadow-1 {
+        left: -20%;
+      }
+    }
+
+    &:hover {
+
+      .cards--three__rect-2 {
+        left: 60%;
+
+        &:before {
+          left: -100%;
+        }
+
+        &:after {
+          left: 80%;
+        }
+
+        .shadow-2 {
+          left: -10%;
+        }
+
+      }
+
+      .cards--three__circle {
+        transform: scale(1);
+
+        &:before {
+          transform: scale(.9);
+        }
+      }
+
+      .cards--three__list {
+        li {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    // .image_div{
+    //   width: 500px;
+    // }
+    .img-responsive {
+      width: 500px !important;
+    }
+
+    &__rect-1 {
+      background: #fff;
+      width: 200px;
+      height: 110px;
+      transform: skewX(-20deg);
+      display: block;
+      position: absolute;
+      top: 73%;
+      opacity: .9;
+      left: -100%;
+      z-index: 8;
+      transition: all .5s ease-in;
+
+      // @media screen and (max-width: 370px) {
+      //   width: 203px;
+      //   height: 450px;
+      // }
+
+
+      p {
+        font-size: 20px;
+        color: #fff;
+        transform: skewX(20deg);
+        line-height: 6rem;
+      }
+
+      .shadow-1 {
+        background: $color-box-6;
+        width: 230px;
+        height: 100px;
+        display: block;
+        position: absolute;
+        left: -200%;
+        z-index: -1;
+        transition: all .3s ease-in;
+      }
+    }
+
+    &__rect-2 {
+      width: 100px;
+      height: 70px;
+      background: #fff;
+      position: absolute;
+      top: 65%;
+      left: 1000%;
+      opacity: .9;
+      transform: skewX(-20deg);
+      z-index: 8;
+      transition: all .5s ease-in;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 40px;
+        background: $color-box-3;
+        opacity: 1;
+        position: absolute;
+        left: 500%;
+        top: 10%;
+        transition: all .3s ease-in;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 40px;
+        background: $color-box-6;
+        opacity: 1;
+        position: absolute;
+        left: 500%;
+        top: 114%;
+        transition: all .5s ease-in;
+        transition-delay: .2s;
+      }
+
+      .shadow-2 {
+        background: $color-box-3;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: -10%;
+        left: 500%;
+        transition: all .5s ease-in;
+        transition-delay: .2s;
+      }
+
+    }
+
+    &__circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      opacity: .9;
+      transform: scale(0);
+      transition: all .3s ease;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: $color-box-6;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: all .3s ease;
+        transition-delay: .2s;
+      }
+    }
+
+    &__list {
+      list-style: none;
+      position: absolute;
+      top: -9px;
+      right: 7px;
+      padding-top: 60px;
+      transition: all .4s ease;
+
+      @media screen and (max-width: 1024px) {
+        right: -5px;
+      }
+
+      // @media screen and (max-width: 768px) {
+      //   right: -5px; 
+
+      // }
+      li {
+        display: inline-block;
+        margin: 4px;
+        color: #fff;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: rgba(87, 204, 253, .9);
+        text-align: center;
+        line-height: 1.7rem;
+        font-size: 12px;
+        transition: all .3s ease;
+        transform: translateX(500%);
+
+        &:nth-child(1) {
+          transition-delay: .2s;
+        }
+
+        &:nth-child(2) {
+          transition-delay: .3s;
+        }
+
+        &:nth-child(3) {
+          transition-delay: .4s;
+        }
+      }
+
+    }
+  }
+
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0px;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: black !important;
+  border: none;
+  outline: none;
+  background: black !important;
+  border-radius: 10px;
+}
+
+.slick-list {
+  border-radius: 45px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .slick-slide {
+    // width: 48vw !important;
+    margin-top: 10vh !important;
+  }
+
+  .slick-slider {
+    width: 60vw;
+  }    
+  .card__collection .cards {
+    width: 426px;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .slick-slide {
+    margin-top: 10vh !important;
+  }
+
+  .slick-slider {
+    width: 56vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .post-bearer-container {
+    margin-top: 44% !important; 
+  }
+}
+@media screen and (max-width: 370px) {
+  .post-bearer-container {
+    margin-top: 44% !important; 
+  }
+  .slick-slide {
+    height: 40vh !important;
+  }
+
+}
