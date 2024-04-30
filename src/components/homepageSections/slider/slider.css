@@ -1,14 +1,4 @@
-/* *, *::before, *::after {
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  background: #333;
-  color: #f2f2f2;
-  min-height: 100%;
-  min-width: 100%;
-} */
 
 .S_container {
   width: 90%;
@@ -75,7 +65,7 @@ body {
 
 
 
-@media screen and (max-width: 500) {
+@media screen and (max-width: 500px) {
 
   .S_card {
     width: 70vw;
