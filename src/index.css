@@ -80,11 +80,11 @@ footer .social-links li a {
   color: #0d6efd;
 }
 @media (max-width: 768px) {
-  .banner-head {
-    font-size: 40px;
+   .banner-head {
+    font-size: 1.4rem !important;
   }
   .hero-banner h2 {
-    font-size: 45px;
+    font-size: 1.5rem !important;
   }
   .hero-banner .hero-banner .btn {
     margin-bottom: 10px;
