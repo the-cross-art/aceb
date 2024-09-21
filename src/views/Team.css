@@ -27,9 +27,14 @@
     padding-left: 8rem;
   }
   
+
+ 
   /* card section responsive */
   @media (max-width : 320px) {
+   .linkidin_icon{
+     margin-top: 2px;
 
+   }
       
     .card{
       width: 20rem;
@@ -61,6 +66,10 @@
     
   }
   @media (max-width : 425px) {
+    .linkidin_icon{
+      margin-top: -3px;
+ 
+    }
     .card{
       width: 20rem;
       height: 20rem;

@@ -26,10 +26,16 @@ import PricingBar from "./PricingBar";
 function Events() {
   const settings = {
     dots: true,
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 3,
+    // slidesToScroll: 1
+    className: "center",
+    centerMode: true,
     infinite: true,
-    speed: 500,
+    centerPadding: "60px",
     slidesToShow: 3,
-    slidesToScroll: 1
+    speed: 500
   };
   return (
     <>
@@ -45,7 +51,7 @@ function Events() {
         {data.map((d) => (
           <div key={d.name} className="bg-white h-[450px] text-black rounded-xl m-10">
             <div className='h-100 bg-indigo-500 flex justify-center items-center'>
-              <img src={d.img} alt="" className="h-100 w-100 "/>
+              <img src={d.img} alt="" className=""/>
             </div>
 
           </div>

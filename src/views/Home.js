@@ -1,12 +1,13 @@
 import React from "react";
 import HeroSection from "../components/homepageSections/HeroSection";
 import TabSection from "../components/homepageSections/TabSection";
-import Avlokan from "../components/homepageSections/Avlokan";
+// import Avlokan from "../components/homepageSections/Avlokan";
 import HeroSectionTwo from "../components/homepageSections/HeroSectionTwo";
 import Patron from "../components/homepageSections/patrn";
 import PostBearer from "../components/homepageSections/PostBearer";
 import WalletModal from "../components/homepageSections/Overlay";
-import Slider from "../components/homepageSections/slider/Slider"
+// import Slider from "../components/homepageSections/slider/Slider"
+import SliderTwo from "../components/homepageSections/slider/SliderTwo";
 import "./Home.css";
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
       <HeroSection />
       <WalletModal />
       <TabSection />
-      <Slider />
+      <SliderTwo/>
       {/* <Avlokan /> */}
       <HeroSectionTwo />
       <Patron />
