@@ -42,11 +42,11 @@ function Gallery() {
       <h3 className="post-bearer-heading">Gallery</h3>
       </div>
    
-    <div className="w-full bg-cyan-900 mt-0 ">
+    <div className="w-full bg-cyan-900  ">
    
 
-<Row className="mt-16">
-      <Col lg={4} md={6} sm={6} xs={6} className='mb-4 mb-lg-0 '>
+<Row className="mt-20">
+      <Col lg={4} md={6} sm={6} xs={6} className='mb-4 mb-lg-0  mt-4'>
         <img
           src={g4}
           className='w-100 h-50 shadow-1-strong rounded mb-4'
@@ -60,7 +60,7 @@ function Gallery() {
         />
       </Col>
 
-      <Col lg={4} md={6} sm={6} xs={6} className='mb-4 mb-lg-0'>
+      <Col lg={4} md={6} sm={6} xs={6} className='mb-4 mb-lg-0  mt-4'>
         <img
           src={g6}
           className='w-100 shadow-1-strong rounded mb-4'
@@ -74,7 +74,7 @@ function Gallery() {
         />
       </Col>
 
-      <Col lg={4} md={6} sm={6} xs={6} className='mb-4 mb-lg-0'>
+      <Col lg={4} md={6} sm={6} xs={6} className='mb-4 mb-lg-0  mt-4'>
         <img
           src={g8}
           className='w-100 h-50 shadow-1-strong rounded mb-4'

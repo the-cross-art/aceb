@@ -9,15 +9,18 @@ import './homepage.css';
 
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
+
+
 const HeroSection = () => {
   return (
-    <div className="hero-banner">
-      <div className="video-overlay"></div>
-      <video autoPlay loop muted className="video-class">
+    <div className="hero-banner" >
+      <video autoPlay loop muted className="video-class " >
         <source src={civil_building} type='video/mp4' />
       </video>
-      <div className="content">
+      <div className="content video-overlay">
         <div className="container">
+  
+
           <h1 className="banner-head">Welcome</h1><span className="banner-head">to</span>
           <h2 className="banner-subhead">Association of Civil Engineers</h2>
           <span class="price"> 2024</span>

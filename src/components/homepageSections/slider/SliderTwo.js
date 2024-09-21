@@ -1,7 +1,4 @@
 import React from "react";
-import { useState } from "react";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import e1 from "../../../assets/images/events/e1.jpg";
 import e3 from "../../../assets/images/events/e3.jpg";
 import e5 from "../../../assets/images/events/e5.jpg";
@@ -9,12 +6,17 @@ import e6 from "../../../assets/images/events/e6.jpg";
 import e9 from "../../../assets/images/events/e9.jpg";
 import e10 from "../../../assets/images/events/e10.jpg";
 import e11 from "../../../assets/images/events/e11.jpg";
-import Slider from "react-slick";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import "./slider.css";
+import 'swiper/css/effect-coverflow';
+
+// import required modules
+import { Pagination, Navigation,EffectCoverflow } from "swiper/modules";
 
 const cardsData = [
   {
@@ -69,41 +71,22 @@ const cardsData = [
     imgUrl: e9,
   },
 ];
-
 const Card = ({ title, content, imgUrl }) => (
   <div className="S_card">
-    <img src={imgUrl} alt={title} style={{ width: "100%" }} />
+    <div className="card_img">
+      <img src={imgUrl} alt={title} style={{ width: "80%", height: "80%" }} />
+    </div>
     <div className="S_card-content">
       <h2 className="S_head">{title}</h2>
-      <p>{content}</p>
+      {/* <p>{content}</p> */}
     </div>
   </div>
 );
 
-const CardSlider = () => {
-  // const [activeIndex, setActiveIndex] = useState(0);
-  
-  // const settings = {
-  //   dots: true,
-  //   // infinite: true,
-  //   // speed: 500,
-  //   // slidesToShow: 3,
-  //   // slidesToScroll: 1
-  //   className: "center",
-  //   centerMode: true,
-  //   infinite: true,
-  //   centerPadding: "60px",
-  //   slidesToShow: 3,
-  //   speed: 500
-  // };
-
- 
+const SliderTwo = () => {
   return (
     <>
-
-
-    <div>
-     
+      {" "}
       {/* for heading events */}
       <div
         style={{ textAlign: "center", margin: "2rem" }}
@@ -111,51 +94,71 @@ const CardSlider = () => {
       >
         <h3 className="post-bearer-heading">Events</h3>
       </div>
-
-
-      <div className="">
-        <div className="">
-        {/* <Slider {...settings}> */}
-        <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-      
-        // slidesPerView={3}
-        // centeredSlides={true}
-        // spaceBetween={30}
-        // pagination={{
-        //   type: 'fraction',
-        // }}
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        loop={true}
+        pagination={{
+          dynamicBullets: true,
+        }}
         // navigation={true}
-        // modules={[Pagination, Navigation]}
-        // className="mySwiper"
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+
+        breakpoints={{
+          760: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          300:{
+            slidesPerView:1,
+            spaceBetween:20,
+            centeredSlides:true,
+          }
+    
+        }}
+
+        // effect={'coverflow'}
+        // grabCursor={true}
+        // centeredSlides={true}
+        // loop={true}
+        // slidesPerView={'auto'}
+        // coverflowEffect={{
+        //   rotate: 0,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 2.5,
+        // }}
+        // pagination={{ el: '.swiper-pagination', clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        // modules={[EffectCoverflow, Pagination, Navigation]}
+        // className="swiper_container"
+     
       >
-          {cardsData.map((card, index) => (
-             <SwiperSlide>
-            <div
-              key={card.id}
-           
-            >
-            
-             <Card {...card} />
+        {cardsData.map((card, index) => (
+          <SwiperSlide>
+            <div key={card.id}>
+              <Card {...card} />
             </div>
-            </SwiperSlide> 
+          </SwiperSlide>
+        ))}
 
-          ))}
-      </Swiper>
-
-          {/* </Slider> */}
+<div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div className="swiper-pagination"></div>
         </div>
-       
-      </div>
-    </div>
+      </Swiper>
     </>
   );
 };
 
-export default CardSlider;
+export default SliderTwo;

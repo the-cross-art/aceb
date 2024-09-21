@@ -40,22 +40,7 @@ const Footer = () => {
             </p>
           </div>
           <hr className="clearfix w-100 d-md-none" />
-          {/* <div id="link10" className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 className="text-uppercase font-weight-bold">Useful links</h6>
-            <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "70px" }} />
-            <p>
-              <a href="#!">Your Account</a>
-            </p>
-            <p>
-              <a href="#!">Become an Affiliate</a>
-            </p>
-            <p>
-              <a href="#!">Shipping Rates</a>
-            </p>
-            <p>
-              <a href="#!">Help</a>
-            </p>
-          </div> */}
+          
           <hr className="clearfix w-100 d-md-none" />
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 className="text-uppercase font-weight-bold">Contact</h6>
@@ -65,8 +50,7 @@ const Footer = () => {
               <i className="fas fa-envelope mr-3"></i> acebitsindri@gmail.com</p>
             <p>
               <i className="fas fa-phone mr-3"></i> + 91 7991128157</p>
-            {/* <p>
-              <i className="fas fa-print mr-3"></i> + 91 xxx</p> */}
+        
           </div>
         </div>
       </div>
@@ -115,7 +99,10 @@ const Footer = () => {
       {/* Copyright */}
       <div className="footer-copyright text-center py-3">
         Designed and Developed by
-        <a href="www.linkedin.com/in/dharm-veer-043743221" className="" title="linkedin">  Dharmveer</a>
+        <a href="https://www.linkedin.com/in/dharm-veer-043743221" className="" title="linkedin">  Dharmveer(2k24) </a>
+       
+        & 
+        <a href="https://www.linkedin.com/in/abhay-kumar-mahato-58a1a624a/"> Abhay(2k26)</a>
       </div>
     </footer>
   );

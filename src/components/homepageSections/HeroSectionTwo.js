@@ -37,16 +37,16 @@ const ShuffleHero = () => {
   return (
     <section className="w-full px-0 py-12 grid grid-cols-1 md:grid-cols-2  gap-8 max-w-6xl mx-auto">
       <div>
-        <h2 className="fs-1">Ace provides a platform</h2>
-        <ul className="fs-5 list-decimal">
-          <li>1.To interact with the department faculty members</li>
-          <li>2.To interact with the professors, scientist and engineers from other organization</li>
-          <li>3.To know about the recent development in civil engineering</li>
-          <li>4.To promote the academic-industry collaborative research</li>
-          <li>5.To gain practical and analytical knowledge via workshops and competitions</li>
-          <li>6.To help in organizing various invited talks, lectures and seminars</li>
-          <li>7.To Improve co-curricular and interpersonal skills (e.g. Fresher's & Farewell parties and Departmental field trips)</li>
-           <li>8.To understand the scope and opportunities in Civil Engineering</li>
+        <h2 className="fs-1 font-serif">ACE provides a platform</h2>
+        <ul className="text-lg font-serif justify-between list-disc">
+          <li>To interact with the department faculty members</li>
+          <li>To interact with the professors, scientist and engineers from other organization</li>
+          <li>To know about the recent development in civil engineering</li>
+          <li>To promote the academic-industry collaborative research</li>
+          <li>To gain practical and analytical knowledge via workshops and competitions</li>
+          <li>To help in organizing various invited talks, lectures and seminars</li>
+          <li>To Improve co-curricular and interpersonal skills (e.g. Fresher's & Farewell parties and Departmental field trips)</li>
+           <li>To understand the scope and opportunities in Civil Engineering</li>
         </ul>
    
       

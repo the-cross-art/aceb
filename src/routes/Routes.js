@@ -20,6 +20,8 @@ import {
 import Gallery from "../components/homepageSections/Gallery";
 import Coordinators from "../views/Coordinators";
 import Team2k21 from "../views/Team2k21";
+import Team2k20 from "../views/Team2k20";
+
 import Faculty from "../views/Faculty";
 import Lab from "../views/Lab";
 import ContactForm from "../components/contact/ContactUs";
@@ -32,6 +34,8 @@ const CommonRoutes = () => {
       <Route exact path="/gallery" component={Gallery} />
       <Route exact path="/coordinators" component={Coordinators} />
       <Route exact path="/team2k21" component={Team2k21} />
+      <Route exact path="/team2k20" component={Team2k20} />
+
       <Route exact path="/faculty" component={Faculty} />
       <Route exact path="/lab" component={Lab} />
       <Route exact path="/events" component={Event} />
