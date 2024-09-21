@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Team.css"
+import "../views/Team.css"
 import Card from "react-bootstrap/Card";
 import { connect } from "react-redux";
 

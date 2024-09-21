@@ -1,5 +1,5 @@
 import React from "react";
-import "./Team.css"
+import "../views/Team.css"
 import Card from "react-bootstrap/Card";
 import suman_topo from "../assets/images/team 2k21/suman_topo.jpg";
 import ashish_jha from "../assets/images/team 2k21/ashish_jha.jpg";
