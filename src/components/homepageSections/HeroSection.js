@@ -23,7 +23,7 @@ const HeroSection = () => {
 
           <h1 className="banner-head">Welcome</h1><span className="banner-head">to</span>
           <h2 className="banner-subhead">Association of Civil Engineers</h2>
-          <span class="price"> 2024</span>
+          {/* <span class="price"> 2024</span> */}
           <a href="/about"><button className="button-73" role="button">About Us</button></a>
           {/* <WalletModal /> */}
           {/* You can add your paragraph text here if needed */}

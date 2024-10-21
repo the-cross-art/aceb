@@ -13,11 +13,10 @@
 }
 
 .img-responsive {
-  // max-width: 100%;
-  // height: auto;
-  // 300 × 450 px
-  width: 300px;
-  height: 450px
+  max-width: 100%;
+  height: auto;
+  
+ 
 }
 
 @import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
@@ -34,34 +33,45 @@ $color-box-7 : #de8b3e;
   position: relative;
   display: block;
   background: rgba(10, 10, 10, .5);
-  padding: 10px;
+  // padding: 10px;
+  width: 360px;
+  height: 500px;
   font-family: 'Do Hyeon', sans-serif;
   overflow: hidden;
+  @media screen and (min-width: 300px) and (max-width: 599px) {
+    
+    height: 350px;
+   
+  }
+
 
   .cards {
-    width: 300px;
-    height: 400px;
+    
+    width: 135%;
+    height: 100%;
     display: block;
-    margin-left: -8px !important;
+
     background-size: cover;
     float: left;
     border-radius: 15px;
     position: relative;
-    // overflow: hidden;
+    overflow: hidden;
     background-position: center;
-    margin: 10px;
+ 
 
-    @media screen and  (max-width: 320px) {
-      height: 80vh;
-    }
+  
     @media screen and (min-width: 600px) and (max-width: 768px) {
       width: 400px;
     }
-    
-    // @media screen and (min-width: 370px) {
-    //   width: 203px;
-    //   height: 450px;
-    // }
+    @media screen and (min-width: 300px) and (max-width: 599px) {
+      width: 400px;
+      height: 100%;
+      img{
+        height:350px;
+        width: 300px;
+      }
+    }
+   
 
   }
 
@@ -106,15 +116,17 @@ $color-box-7 : #de8b3e;
       }
 
       .cards--three__list {
+        right: 180px !important;
+
+        @media screen and (min-width: 300px) and (max-width: 599px) {
+          right: 140px !important;
+        }
         li {
           transform: translateX(0);
         }
       }
     }
 
-    // .image_div{
-    //   width: 500px;
-    // }
     .img-responsive {
       width: 500px !important;
     }
@@ -340,8 +352,6 @@ $color-box-7 : #de8b3e;
   .post-bearer-container {
     margin-top: 44% !important; 
   }
-  .slick-slide {
-    height: 40vh !important;
-  }
+ 
 
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './homepage.css';
 import './card.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -76,7 +76,7 @@ function App() {
         <h3 className='post-bearer-heading'>Post Bearers</h3>
       </div>
       <div className='w-full mt-0'>
-        <div className='w-3/4 m-auto mt-0'>
+        <div className='mt-0'>
           <div className='post-bearer-container'>
             <Slider {...settings}>
               {data.map((d, index) => (
@@ -102,12 +102,12 @@ function App() {
                       <li>
                         <a href={d.url}><FontAwesomeIcon icon={faLinkedinIn} /></a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a><FontAwesomeIcon icon={faFacebook} /></a>
                       </li>
                       <li>
                         <a><FontAwesomeIcon icon={faInstagram} /></a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ const data = [
   {
     name: `Ajay Mahato`,
     img: (sc),
-    review: `Secretry`,
+    review: `Secretary`,
     url: ('https://www.linkedin.com/in/ajay-mahato-8a7446230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')
   },
   {
@@ -255,10 +255,10 @@ const data = [
     url: ('https://www.linkedin.com/in/sanya-deo-b61479236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')
   },
   {
-    name: `SANYA DEO `,
+    name: `MEHAR TALAT `,
     img: (ch),
     review: `Creative Head`,
-    url: ('https://www.linkedin.com/in/sanya-deo-b61479236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')
+    url: ('https://www.linkedin.com/in/mehartalat/')
   },
 
 ];

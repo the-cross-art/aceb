@@ -1,10 +1,10 @@
 .card{
-    width: 20rem;
+    width: 22rem;
     height: 26rem
   
   }
   .card-img{
-    width: 20rem;
+    width: 22rem;
     max-height: 16rem;
   }
   .card-title{
@@ -25,6 +25,25 @@
   }
   .faculty_container{
     padding-left: 8rem;
+    @media (min-width:200px) and (max-width:400px) {
+   margin: 0px;
+      
+    }
+    @media (min-width:1500px) and (max-width:1600px) {
+      padding-left: 8rem;
+      gap: 100px;
+      
+    }
+    @media (min-width:1600px) and (max-width:1800px) {
+      padding-left: 12rem;
+      gap: 100px;
+      
+    }
+    @media (min-width:1350px) and (max-width:1500px) {
+      padding-left: 4rem;
+    
+      
+    }
   }
   
 
@@ -37,7 +56,7 @@
    }
       
     .card{
-      width: 20rem;
+      width: 22rem;
       height: 14rem;
   
     }

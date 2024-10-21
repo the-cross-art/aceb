@@ -21,6 +21,7 @@ import Gallery from "../components/homepageSections/Gallery";
 import Coordinators from "../views/Coordinators";
 import Team2k21 from "../views/Team2k21";
 import Team2k20 from "../views/Team2k20";
+import Core from "../views/Core2k22";
 
 import Faculty from "../views/Faculty";
 import Lab from "../views/Lab";
@@ -39,6 +40,8 @@ const CommonRoutes = () => {
       <Route exact path="/faculty" component={Faculty} />
       <Route exact path="/lab" component={Lab} />
       <Route exact path="/events" component={Event} />
+      <Route exact path="/core" component={Core} />
+      
       
 
 

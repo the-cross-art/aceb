@@ -78,7 +78,7 @@ const Card = ({ title, content, imgUrl }) => (
     </div>
     <div className="S_card-content">
       <h2 className="S_head">{title}</h2>
-      {/* <p>{content}</p> */}
+    
     </div>
   </div>
 );
@@ -101,7 +101,7 @@ const SliderTwo = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        // navigation={true}
+        
         modules={[Pagination, Navigation]}
         className="mySwiper"
 
@@ -118,29 +118,17 @@ const SliderTwo = () => {
     
         }}
 
-        // effect={'coverflow'}
-        // grabCursor={true}
-        // centeredSlides={true}
-        // loop={true}
-        // slidesPerView={'auto'}
-        // coverflowEffect={{
-        //   rotate: 0,
-        //   stretch: 0,
-        //   depth: 100,
-        //   modifier: 2.5,
-        // }}
-        // pagination={{ el: '.swiper-pagination', clickable: true }}
+        
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
           clickable: true,
         }}
-        // modules={[EffectCoverflow, Pagination, Navigation]}
-        // className="swiper_container"
+ 
      
       >
         {cardsData.map((card, index) => (
-          <SwiperSlide>
+          <SwiperSlide className="swiperslide">
             <div key={card.id}>
               <Card {...card} />
             </div>
@@ -148,11 +136,11 @@ const SliderTwo = () => {
         ))}
 
 <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
+          <div className="swiper-button-prev slider-arrow text-black">
+          <img width="15" height="15" src="https://img.icons8.com/ios-filled/50/chevron-left.png" alt="chevron-left"/>
           </div>
           <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
+          <img width="15" height="15" src="https://img.icons8.com/ios-filled/50/chevron-right.png" alt="chevron-right"/>
           </div>
           <div className="swiper-pagination"></div>
         </div>

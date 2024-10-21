@@ -40,6 +40,9 @@ p {
   font-weight: 400;
   letter-spacing: 0.1px;
   color: #5f6368;
+  @media (min-width:200px) and (max-width:400px) {
+    font-size: 10px;
+  }
 }
 .head-color {
   color: #0d6efd;

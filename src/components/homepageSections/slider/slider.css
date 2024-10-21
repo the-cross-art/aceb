@@ -80,14 +80,14 @@
 @media screen and (max-width: 500px) {
 
   .S_card {
-    width:70vw;
+    width:80vw;
     height: 52vh;
 }
 .card_img{
   display: flex;
   justify-content: center;
   align-items: center;
-  width:70vw;
+  
   height: 40vh;
  
 
@@ -247,7 +247,8 @@ body {
 
 .slider-controler .slider-arrow ion-icon {
   font-size: 2rem;
-  color: #222224;
+  color: #000000;
+
 }
 
 .slider-controler .slider-arrow::after {
@@ -266,4 +267,16 @@ body {
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
+}
+
+
+@media (max-width:360px) and (min-width:318px) {
+  .mySwiper{
+    margin: 0% 6.9%;
+
+  }
+  .swiperslide{
+  margin-right: 0 !important;
+  }
+  
 }

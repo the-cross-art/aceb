@@ -8,6 +8,7 @@ import PostBearer from "../components/homepageSections/PostBearer";
 import WalletModal from "../components/homepageSections/Overlay";
 // import Slider from "../components/homepageSections/slider/Slider"
 import SliderTwo from "../components/homepageSections/slider/SliderTwo";
+// import PhoneSlider from "../components/homepageSections/slider/PhoneSlider.js";
 import "./Home.css";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <TabSection />
       <SliderTwo/>
       {/* <Avlokan /> */}
+      {/* <PhoneSlider/> */}
       <HeroSectionTwo />
       <Patron />
       <PostBearer />

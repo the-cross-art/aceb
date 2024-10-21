@@ -92,7 +92,7 @@ const Navbar = () => {
                 className="sc-de23db1c-0 isMwKp"
                 href="/about"
               >
-                <span>About Us</span>
+                <span>About</span>
               </a>
             </li>
             <li>
@@ -126,10 +126,12 @@ const Navbar = () => {
               <div className="dropdown">
                 <button className="dropbtn">Team</button>
                 <div className="dropdown-content">
+                <a href="/core">2K22</a>
+
+                  
                   <a href="/team2k21">2K21</a>
                   <a href="/team2k20">2K20</a>
 
-                  <a href="/coordinators">Coordinators(2k22)</a>
                 </div>
               </div>
             </li>
@@ -139,7 +141,7 @@ const Navbar = () => {
                 <div className="dropdown-content">
                   <a href="/constitution">Constitution</a>
                   <a href="/magazine">Magazine</a>
-                  <a href="/blogs">Blogs</a>
+               
                   <a
                 data-label="Docs"
                 variant="main-nav"

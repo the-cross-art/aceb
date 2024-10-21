@@ -136,10 +136,10 @@ const Team2k20 = () => {
   return (
     <>
     <div className="post-bearer my-3">
-      <h3 className="post-bearer-heading">Post Bearer:Incharge 2023-2024</h3>
+      <h3 className="post-bearer-heading">Post Bearer:Incharge 2024-2024</h3>
     </div>
     {/*  */}
-    <div className="faculty_container  flex gap-10 content-between flex-wrap  m-10 p-6 ">
+    <div className="faculty_container flex gap-10 content-between flex-wrap  p-6 ">
       {data.map((d) => (
       <Card
       // style={{  }}
